@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow property</title>
+    <style>
+        .box {
+            width: 30vw;
+            height: 10vh;
+            /* it means total viewport ki 30 pecent width n total view height is 10 percent height */
+            border: 2px solid indigo;
+            /* overflow: scroll; */
+            /* it will let me scroll overflow */
+            overflow: auto;
+            /* it lets u scroll if not fitted n if fitted then no need to scroll so its auto */
+            white-space: nowrap;
+
+            /* this makes text all horizontal : no vertical at all */
+            overflow: scroll scroll;
+            /* text-overflow: ellipsis; */
+            /* it shows 3 dots  */
+            /* same can be established by */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            /* overflow: clip; */
+            /* this x-y can be written in one too */
+            /* overflow: hidden scroll; */
+            /* it wont let u scroll */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">i am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed incidunt odio magnam saepe
+        nostrum debitis dolore. Excepturi, necessitatibus quo architecto harum facilis, illum itaque dignissimos nam
+        aut, accusantium porro voluptate? Vero reiciendis ea est maiores illum distinctio minima impedit repellat
+        soluta, nesciunt odit, similique doloribus?</div>
+
+</body>
+
+</html>

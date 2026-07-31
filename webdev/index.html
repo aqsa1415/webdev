@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" this is a page which has meta description ">
+    <title> My Bookmarks - Aqsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> My Bookmarks </h1>
+    <h2> Primary Bookmarks </h2>
+    <a style="background-color : white" target="_blank" href="https://www.google.com">Open google</a></p>
+    <a style="background-color : white" target="_blank" href="https://www.facebook.com">Open Facebook</a></p>
+    <a style="background-color : rgb(248, 240, 240)" target="_blank" href="https://www.quora.com">Open quora</a></p>
+    <a style="background-color : white" target="_blank" href="https://www.youtube.com">Open youtube</a></p>
+
+    <h3> Secondary Bookmarks </h3>
+    <a style="background-color : white" target="_blank" href="https://www.wikipedia.com">Open wikipedia</a></p>
+    <a style="background-color : white" target="_blank" href="https://www.stackoverflow.com">Open stackoverflow</a></p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet fugiat quibusdam veniam
+        repudiandae facilis non, error sit saepe possimus minus repellendus, similique voluptatum
+        eum velit natus! Nam ab incidunt quidem?
+    <p style="background-color : thistle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        doloremque?
+        <script src="script.js"></script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui voluptates nihil, beatae blanditiis
+        debitis eius nostrum reprehenderit illo ex quis perspiciatis rem magnam suscipit delectus autem facilis ab! Quia
+        atque corporis eligendi pariatur omnis, obcaecati animi deserunt minus vero corrupti, voluptatum reiciendis
+        dignissimos nobis!</p>
+    <a style="background-color : white" target="_blank" href="https://www.wikipedia.com"><img width="230" height="120"
+            src="cat.avif" alt="cat image"></a>
+
+    <br>
+    <table>
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Favourite language</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aqsa</td>
+                <td>programmer</td>
+                <td>c++</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">selena</td>
+
+                <td rowspan="2">java</td>
+            </tr>
+
+        </tbody>
+
+
+        <tfoot>
+            <tr>
+                <td colspan="2">selena</td>
+
+                <td rowspan="2">java Foot</td>
+            </tr>
+
+
+
+        </tfoot>
+
+
+
+    </table>
+
+    <br>
+    <ul type="square">
+        <li> Aqsa</li>
+        <li>Selena</li>
+        <li>Games</li>
+    </ul>
+
+    <ol>
+        <caption>Best animes</caption>
+        <li>Attack on titan</li>
+        <li>classroom of the elite</li>
+    </ol>
+
+    <form action="post">
+        <div>
+            <label for="username"> Enter ur username</label>
+            <input type="text" id=username name=username placeholder="Enter your username" autofocus>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="Yes">
+            <label for="subscribe">Subscribe for newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter ur comment</label>
+            <br>
+            <textarea name="" name="comment" rows="5" cols="30"></textarea>
+        </div>
+        <div>
+            <select name="fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+
+            </select>
+        </div>
+
+
+    </form>
+
+    <p>checking inline element im para</p>
+    <a href="https://www.google.com"> Google</a>
+    <div>i am a block element </div>
+    <span>i am inline element</span><a href="">yes he's inline</a>
+
+    <!-- 
+    now lecture 8 : id and classes
+
+-->
+    <div id="firstdiv" class="red bg-yellow">first</div>
+    <div id="seconddiv">second</div>
+    <span class="red"></span>
+
+    <!-- video 
+    controls must be written : it gives pause , play features
+u can also write following beside controls
+    autoplay:automatialy plays video when page loads
+    muted: mutes the video by defAULT
+    loop : play video again when it ends
+    poster: just a poster of video what u want to show
+    preload : it specifies how the audio should be loaded when the page loads 
+    1. none :
+    this is default value, it indicates that browser should not preload the audio.
+    the audio file will only starts initialising when user indicates 
+
+    2. metadata:
+    only display important info about audio :
+    like duration , basic info. 
+
+    3. auto : this instruct the browser to preload the entire audio file as much as possible without delaying the loading of other
+    page content. the browser will try to load the file in background so that its ready to play when user initiates.
+
+
+    video,audio,svg is inline element
+    svg: for drawing graphics: scalable vector graphs 
+    similarly for audio 
+    <audio src="" controls ></audio>
+    -->
+    <video src="news.mp4" height="255px" controls muted poster="cat.avif"></video>
+
+
+
+
+
+
+</body>
+
+</html>
+<!-- and
+
+
+FOR REVISION MUST REFER TO THESE ONLINE NOTES
+
+
+
+target = _blank is used to open link href in new tab
+enclosing in para <p> lets u change lines 
+alt in image is used for safety like if u upload an unexisted image in code... it will
+just show image wiht name icon ..
+if u set only one width/height other will be automatialy adjust
+tr : table row
+th : table heading 
+td: table data
+<td colspan="2">selena</td>. 2 column space now sleena will take
+caption is used to assign the heading of table  : 
+br tag : line break add
+instead of indivual t head(th) n tdata (td)
+u can group them in header and footer and body: just a way of grouping u can go wirhotut these too
+tbody represents data inside table
+if going without these : just all remain same just dont write thead n tfoot n tbody 
+ 
+
+
+
+
+
+
+-->

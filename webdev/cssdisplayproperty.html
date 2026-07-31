@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            width: 344px;
+            padding: 45px;
+            margin: 34px;
+
+            /* if u want to centre the content in it use : */
+            display: flex;
+            /* display: inline-flex; */
+            /* using inline both boxes will simly be beside each other (horizontal) */
+            /* display: grid; */
+            justify-content: center;
+
+
+
+
+
+
+        }
+
+        /* .box1 {
+            /* display: none; 
+            /* it removes block elements with space */
+        /* visibility: hidden; */
+        /* it removes block elements without removing space */
+        /* } */
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am a box element inside div
+    </div>
+    <div class="box">
+        also a box
+
+    </div>
+    <span>i am good</span>
+    <span>
+        girl
+
+    </span>
+
+</body>
+
+</html>
+
+
+<!-- 1. u can convert block elements to inline using display property and writing 
+ display: inline 
+ but here margin , padding will not work from top : all directions they will wokr but not top
+ so u can fix this by :
+ 2. using display : inline-block
+ also width has no effect on inline elements 
+ 3.if u use display:none 
+ it will remove block elemnets with the space they were taking
+ 4. if u dont want the space to remove n only block elements then use display : 
+ visibility :hidden -->

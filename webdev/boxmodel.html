@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .box1 {
+            color: rgb(196, 44, 84);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            /* this height by default is only content heghit not total */
+            box-sizing: border-box;
+            /* by writing above the height will now be upto border  */
+
+        }
+
+        .box2 {
+            color: rgb(62, 11, 69);
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blueviolet;
+            height: 200px;
+            box-sizing: border-box;
+
+            /* here in both box 1 , 2 margin is 25  so total space between boxes should 
+            be 50 but its not that : its called margin collapse: whoever margin is max that will be taken only 
+            so here both have 25 : so max is 25 : distance between them = 25*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        i am box one
+
+    </div>
+    <div class="box box2">
+        i am box 2
+    </div>
+
+</body>
+
+</html>

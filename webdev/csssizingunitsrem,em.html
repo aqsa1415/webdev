@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* by using width = 80vw : viewport we cann adjust our screen size n webpage */
+            /* if we dont do this code will be shifetd if used in other device wihch doesnt have this must assigned width */
+            /* width: 2048px; */
+            width: 80vw;
+
+
+            margin: auto;
+            /* margin:auto used for horizontal equal margin from left/right sides 
+            so our text will now centrelised , it can only be used to centre block elemenets
+            not inline  */
+
+            background-color: aquamarine;
+
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            /* font-size: 18px; */
+            /* by writing margin as this it means 23px vertical margin n auto is horizontal margin */
+
+        }
+
+        .container p {
+            /* font-size: 2em; */
+            border: 2px solid red;
+            width: 50%;
+            /* meaning its parent : ;s 50 percent width = para width */
+            font-size: 2rem;
+        }
+
+        .mycontain {
+            box-sizing: border-box;
+            background-color: red;
+            min-height: 80vh;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+            margin: auto;
+            border: 2px solid rgb(216, 187, 21);
+            /* vmin is device dependent : as in computer vmin is height n phone vmin is width: width
+            so here width = 100vmin  = 100vh for computer*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim, iusto debitis facilis libero
+            excepturi quia qui saepe, iste provident quasi consequuntur ut repellat esse totam, omnis eligendi illum.
+            Fuga,
+            veniam. Enim, eius in. Dicta, accusantium quibusdam sint, exercitationem quam dolorem doloremque officiis
+            consequatur velit reprehenderit ullam molestiae? Eligendi eum nemo odit asperiores itaque ipsa quasi. ipsum
+            dolor sit amet consectetur adipisicing elit. Architecto neque, nemo dolore, quas minima sint fugit fuga
+            numquam
+            reiciendis quidem laboriosam aspernatur repudiandae, placeat similique ea cum voluptates impedit sunt.
+        </p>
+
+
+    </div>
+    <div class="mycontain">i am another container</div>
+
+</body>
+
+</html>
+
+
+<!-- 1. em : it is that which inherited from parent eg:
+ if parent has  font size 16(which is default only if they dont have any) and we write container p {
+ font-size:2em; i.e 32 will be childs font size
+ 
+ }  here p is first child of container : cso if container font size is 12 and we write 2em inside : then font size will be 2 times of inherited from parent i.e 24-->
+
+
+
+<!-- 2. rem:
+  it is same as em but here its root like html {
+  default font size if we declare 18 } and we write font size = 2rem then it will be 2 times 
+  root size  -->

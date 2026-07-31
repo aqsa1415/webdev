@@ -1,0 +1,73 @@
+<!-- date 24 july,2026 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priority/specificity</title>
+    <style>
+        h1 {
+            color: black;
+        }
+
+        .red {
+            color: red
+        }
+
+        .blue {
+            color: blue;
+
+        }
+
+        .purple {
+            color: purple;
+
+        }
+
+        h1.blue {
+            color: rgb(60, 60, 114);
+        }
+
+        [data-x=a] {
+            background-color: cadetblue;
+        }
+
+        .fish {
+            color: plum !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="red blue purple"> colour specificity</h1>
+        <h2 style="color: blue;" class="red blue purple"> i will be blue since i am inline style attribute which has
+            highest priority</h2>
+        <!-- this has 3 classees so taht will win which is latest i.e purple 
+        1. IN SAME TYPE OF SELECTOR LATEST UPDATED COLOR WINS I.E purple : its same as 
+         overwrite in python 
+         this is decided by cascade algorithm 
+        2. inline(1000) (like style = is in line : it has highest priority) > id(100) >
+        class/atrribute selector(10) > element selector(1) > universal selector (0) -->
+        <!-- 3. inline styles can be overwrittin by important if u use important > -->
+        <!-- if u want to know specificityof h1.blue = because h1 is element selector (1)+blue is class(10) = 11 points so it has high priority than other classes -->
+        <!-- pseudo class add hone se : 10 points specificity -->
+
+
+
+
+        <!-- specificity OF 1+10+10+10+10 = 41 -->
+        <!-- a.harry.class.rohan-class[href]:hover {
+         color: blue}-->
+
+        <h3 class="red blue purple" data-x="a"> i am attribute selector</h3>
+        <h4 class="fish" style="color: red;"> i am important colour with the most highest priority , i can overwrite
+            inline style too</h4>
+    </div>
+
+</body>
+
+</html>
+
+<!-- that is why inline css should be avoided as to overwrite it in future only it is done by important keyword  -->

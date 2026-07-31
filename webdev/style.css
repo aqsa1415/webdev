@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(61, 30, 88);
+    color: white;
+}
+
+td {
+    border: 2PX solid rgb(214, 140, 198);
+}
+
+th {
+    border: 2PX solid white;
+
+}
+
+p {
+    background-color: rgb(52, 112, 92);
+}
+
+a {
+    background-color: rgb(147, 165, 82);
+    color: rgb(47, 38, 81);
+}
+
+.red {
+    background-color: beige;
+}
+
+#firstdiv {
+    background-color: cadetblue;
+}
+
+
+/* This is a single-line comment */
+
+/* para background colour will take full width of that line because its a block element 
+but anchor a is inline element it will take only space thats required 
+
+but 
+*/

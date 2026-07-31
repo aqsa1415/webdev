@@ -1,0 +1,102 @@
+<!-- date 24july,2026 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* element selector */
+        /* div{
+            background-color: black;
+        } */
+
+        /* class selector  */
+
+        .red {
+            background-color: red;
+        }
+
+        /* id selector  */
+        #room {
+            background-color: blanchedalmond;
+        }
+
+        /* child selector - it should be inside div diectly not like div then article then it is para : no  */
+        div>p {
+            background-color: rgb(28, 39, 187);
+
+        }
+
+        div p {
+            background-color: chartreuse;
+        }
+
+        /* Descendant selector - it should be inside any descendant */
+        /* it is written just div and one space then p if its for para in div n accordanly  */
+
+
+
+        /* universal selector : it is applicable to all elements  */
+        * {
+            color: rgb(133, 30, 30);
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* Pseudo Selector */
+        a {
+            background-color: rgba(9, 10, 2, 0.389);
+        }
+
+        a:visited {
+            color: yellow;
+            background-color: rgb(242, 237, 231);
+        }
+
+        a:link {
+            color: antiquewhite
+        }
+
+        a:active {
+            background-color: brown;
+        }
+
+        a:hover {
+            background-color: cadetblue;
+        }
+
+        p:first-child {
+            background-color: rgb(255, 0, 13);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="red">
+        Hi , i am div class red.
+
+    </div>
+    <div id=room>
+        Hi i am an id in div.
+    </div>
+    <div>
+        <article>
+            <p>hi i am in article which is in div</p>
+        </article>
+        <p>Hi i am a para in div. i am first child </p>
+        <p>hi i am also a para in div second para second child </p>
+    </div>
+    <div class="six">
+        <a href="https://www.google.com" target="_blank">GO TO GOOGLE</a>
+        <a href="https://www.instagram.com">GO TO instagram</a>
+
+    </div>
+
+</body>
+
+</html>

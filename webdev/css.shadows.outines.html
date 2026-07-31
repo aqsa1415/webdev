@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS shadows and outlines</title>
+    <style>
+        .box {
+            border: 2px solid indigo;
+            padding: 34px;
+            /* box-shadow: h-offset v-offset blur spread color inset; */
+            box-shadow: 5px 5px 15px 5px #888888;
+            display: flex;
+            justify-content: center;
+
+            /* text shadow text-shadow: h-offset v-offset blur color;
+            •text-element { text-shadow: 2px 2px 4pk #888888; } */
+            text-shadow: 2px 2px 4px #888888;
+            /* display: inline-block; */
+
+            /* An outline is a line that is drawn around elements, outside the borders, to make the element "stand out". It's commonly used for accessibility purposes, like highlighting focused elements.
+The Syntax for Outlines is as follows:
+outline: width style color; */
+            outline: 2px solid pink;
+            border-radius: 8px;
+            /* outline-offset: 19px; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">i am a box</div>
+
+</body>
+
+</html>
